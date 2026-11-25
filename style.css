@@ -47,3 +47,7 @@ body{background:#14101f}
 .help p,.help li{color:#d0bfdc}
 .help .close{background:#4c3265;color:#f7ebff}
 .help .fine{border-top-color:#a778c538}
+
+/* Naamaccent */
+.aa{color:#f1b5ed;font-weight:800;font-style:normal}
+.brand-text{letter-spacing:.5px}
