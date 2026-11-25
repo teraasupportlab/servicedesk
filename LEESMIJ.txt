@@ -1,8 +1,11 @@
-ICT servicedesk met sAArtje
+ICT servicedesk met AAdrie en sAArtje
 
-Pak alle bestanden en de map afbeeldingen samen uit op je HTTPS-leswebsite. Open index.html.
-De index blijft 1000 x 500 pixels. Popups vullen 97% van het beschikbare browservenster.
-Laad eerst de AI, sluit de popup en kies een oefening.
-Docent: open docentenhandleiding.html rechtstreeks voor scenariofeiten en beoordeling.
-Alle vijftien oefeningen gebruiken hetzelfde geladen AI-model.
-Download het ticket voor je opnieuw oefent, vernieuwt of de browser sluit.
+Open index.html op je HTTPS-leswebsite. Kies eerst AAdrie of sAArtje.
+Laad daarna de AI en kies een telefonische melding.
+Beide personages oefenen dezelfde 15 scenario’s met eigen afbeeldingen.
+De index blijft 1000 x 500 pixels; de popups vullen bijna het hele venster.
+Met de knop bovenaan kun je van personage wisselen. De AI blijft geladen.
+Gesprekken en tickets blijven per melding én per personage apart in dit tabblad bewaard.
+Download je ticket voordat je opnieuw oefent of de pagina sluit/vernieuwt.
+De browser bepaalt welke Nederlandse voorleesstemmen beschikbaar zijn. Je kunt zelf een stem kiezen.
+Docent: open docentenhandleiding.html voor oorzaken, oplossingen en beoordeling.
