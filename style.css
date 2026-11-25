@@ -51,3 +51,9 @@ body{background:#14101f}
 /* Naamaccent */
 .aa{color:#f1b5ed;font-weight:800;font-style:normal}
 .brand-text{letter-spacing:.5px}
+
+/* Ronde sluitknop voor popups */
+.popup-bar .circle-close,.help .circle-close{display:grid;place-items:center;width:32px;height:32px;min-width:32px;padding:0;border:1.5px solid #d9b5f5;border-radius:50%;background:#4c3265;color:#fff;font-size:25px;font-weight:400;line-height:1;cursor:pointer}
+.popup-bar .circle-close:hover,.help .circle-close:hover{background:#795099;border-color:#f1b5ed}
+.circle-close:focus-visible{outline:3px solid #efa242;outline-offset:3px}
+.help h2{padding-right:38px}
