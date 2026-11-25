@@ -1,0 +1,8 @@
+ICT servicedesk met sAArtje
+
+Pak alle bestanden en de map afbeeldingen samen uit op je HTTPS-leswebsite. Open index.html.
+De index blijft 1000 x 500 pixels. Popups vullen 97% van het beschikbare browservenster.
+Laad eerst de AI, sluit de popup en kies een oefening.
+Docent: open docentenhandleiding.html rechtstreeks voor scenariofeiten en beoordeling.
+Alle vijftien oefeningen gebruiken hetzelfde geladen AI-model.
+Download het ticket voor je opnieuw oefent, vernieuwt of de browser sluit.
