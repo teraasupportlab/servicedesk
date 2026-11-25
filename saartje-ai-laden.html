@@ -2,7 +2,7 @@
 'use strict';
 const $=id=>document.getElementById(id),LIB='https://esm.run/@mlc-ai/web-llm@0.2.89';
 let engine=null,worker=null,workerURL=null,job=0,loading=false,mode='0.5',modelId='',ready=false,previousFocus=null;
-function fit(){const scale=Math.min(1,window.innerWidth/1000,window.innerHeight/500);$('stage').style.transform='scale('+scale+')';}
+function fit(){const scale=Math.min(window.innerWidth/1000,window.innerHeight/500);$('stage').style.transform='scale('+scale+')';}
 fit();window.addEventListener('resize',fit);
 function setProgress(value){const v=Math.round(Math.max(0,Math.min(100,value)));$('percent').textContent=v+'%';$('fill').style.width=v+'%';$('progress').setAttribute('aria-valuenow',String(v));}
 function stage(n){for(let i=0;i<4;i++){$('step'+i).className='step'+(i<n?' done':i===n?' active':'');}}
