@@ -29,7 +29,7 @@ for(const button of document.querySelectorAll('[data-call]'))button.addEventList
 document.getElementById('startCase').onclick=()=>openPage(selectedCase);
 // Eenmalige kiekeboe-begroeting; wacht tot de index zichtbaar is.
 const kilroySlot=document.getElementById('kilroySlot'),kilroyMascot=document.getElementById('kilroyMascot');
-function playKilroy(){if(document.hidden||popup.open){setTimeout(playKilroy,1000);return;}kilroySlot.hidden=false;const still=window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;kilroyMascot.src=still?'afbeeldingen/sAArtje-kilroy-vooruit.png':'afbeeldingen/sAArtje-kilroy-250x250.gif';}
+function playKilroy(){if(document.hidden||popup.open){setTimeout(playKilroy,1000);return;}kilroySlot.hidden=true;kilroyMascot.onload=()=>{kilroySlot.hidden=false;};kilroyMascot.src='afbeeldingen/sAArtje-kilroy-250x250.gif?v=8&t='+Date.now();}
 setTimeout(playKilroy,4000+Math.random()*4000);
 // Escape werkt ook wanneer de focus in de ingesloten pagina staat.
 frame.addEventListener('load',()=>{applyView();try{frame.contentDocument.addEventListener('keydown',e=>{if(e.key==='Escape'&&!frame.contentDocument.getElementById('help')?.classList.contains('open')&&!frame.contentWindow.exerciseModalOpen?.()){e.preventDefault();closePage()}},true)}catch{}});
