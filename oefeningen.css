@@ -15,3 +15,15 @@
 .composer textarea[readonly]{border-color:#ff9ab3}
 @keyframes mic-pulse{50%{box-shadow:0 0 0 5px #ff5c8a40}}
 @media (prefers-reduced-motion:reduce){.mic.recording{animation:none}}
+/* Terugblik: volledig gesprek boven de zelfbeoordeling */
+#checkSheet{overflow-y:auto}
+.sheet-sub{font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#d594ff;margin:6px 0 5px}
+.transcript{max-height:118px;overflow-y:auto;background:#1c1429;border:1px solid #aa7dca44;border-radius:10px;padding:8px 12px}
+.transcript .turn{font-size:11.5px;line-height:1.45;margin:0 0 5px;color:#eadcf4}
+.transcript .turn:last-child{margin-bottom:0}
+.transcript .turn.me strong{color:#d594ff}
+.transcript .turn.caller strong{color:#ffb25d}
+#checkSheet p{margin:4px 0}
+#checkSheet .self-check{gap:7px;margin:8px 0}
+#checkSheet .self-check label{font-size:12px}
+.sheet-sub span{text-transform:none;letter-spacing:0;color:#bfa8d1;font-weight:400;margin-left:6px}
