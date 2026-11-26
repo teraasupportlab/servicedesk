@@ -31,19 +31,15 @@
 /* Icon-only call controls with screen-reader labels and clear color cues. */
 .call-actions .icon-action{display:inline-grid;place-items:center;width:42px;height:40px;min-width:42px;padding:0;border-radius:10px;flex:0 0 auto}
 .call-actions .icon-action .icon-svg{display:block;width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-.pickup-row .big-pickup{display:grid;place-items:center;width:48px;height:48px;min-width:48px;padding:0;border:0;border-radius:50%;background:transparent;color:#39c96b;font-size:0}
-.pickup-row .big-pickup:hover:not(:disabled){background:#39c96b18;color:#48df7b}
-.pickup-row .big-pickup:not(:disabled) .pickup-icon{width:23px;height:23px;animation:phone-bob 1s ease-in-out infinite;transform-origin:center}
-.pickup-row .big-pickup .repeat-icon{display:none}
-.pickup-row .big-pickup.is-repeat{background:transparent;color:#d594ff}
-.pickup-row .big-pickup.is-repeat .pickup-icon{display:none}
-.pickup-row .big-pickup.is-repeat .repeat-icon{display:block;width:22px;height:22px}
+.pickup-row .big-pickup{display:grid;place-items:center;width:56px;height:52px;min-width:56px;padding:0;border:0;border-radius:10px;background:transparent;color:#39c96b;font-size:0}
+.pickup-row .big-pickup:hover:not(:disabled){background:#39c96b18}
+.pickup-row .pickup-gif{display:block;width:52px;height:auto;object-fit:contain}
+.pickup-row .big-pickup.is-hangup:hover:not(:disabled){background:#e5424218}
 .pickup-row .big-pickup:focus-visible{outline:3px solid #f2c46d;outline-offset:3px}
+.exercise-stage.in-call .pickup-row{height:48px;flex:0 0 48px;justify-content:flex-end;padding:0 8px;border:0;background:transparent}
+.exercise-stage.in-call .pickup-row span{font-size:10px;color:#f0b7bd}
 .call-actions .mic .stop-icon{display:none}
 .call-actions .mic[aria-pressed="true"] .mic-icon{display:none}
 .call-actions .mic[aria-pressed="true"] .stop-icon{display:block}
 .call-actions #exSend{background:#9447f0;color:#fff}
-.call-actions #exHang{background:#81384f;color:#fff}
 .call-actions .icon-action:focus-visible{outline:3px solid #f2c46d;outline-offset:3px}
-@keyframes phone-bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
-@media(prefers-reduced-motion:reduce){.pickup-row .big-pickup:not(:disabled) .pickup-icon{animation:none}}
