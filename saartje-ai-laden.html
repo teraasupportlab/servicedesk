@@ -37,4 +37,4 @@ $('start').onclick=load;$('stop').onclick=stop;$('retry').onclick=()=>{ready=fal
 Object.defineProperty(window,'saartjeAI',{get:()=>ready?engine:null});Object.defineProperty(window,'saartjeAIModel',{get:()=>ready?modelId:null});
 function openHelp(){previousFocus=document.activeElement;$('help').classList.add('open');$('help').focus();}function closeHelp(){$('help').classList.remove('open');previousFocus?.focus();}$('helpButton').onclick=openHelp;$('closeHelp').onclick=closeHelp;document.addEventListener('keydown',e=>{if(!$('help').classList.contains('open'))return;if(e.key==='Escape')closeHelp();if(e.key==='Tab'){e.preventDefault();$('closeHelp').focus();}});
 window.addEventListener('pagehide',()=>{++job;clearEngine();});stage(-1);buttons();
-</script><script src="personages.js?v=1"></script><script src="scenarios.js"></script><script src="oefeningen.js?v=online-1"></script></body></html>
+</script><script src="personages.js?v=1"></script><script src="scenarios.js?v=2"></script><script src="oefeningen.js?v=online-2"></script></body></html>

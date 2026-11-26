@@ -21,7 +21,7 @@ const popup=document.getElementById('popup'),frame=document.getElementById('page
 function fit(){document.getElementById('home').style.transform='scale('+Math.min(1,window.innerWidth/1000,window.innerHeight/500)+')'}fit();window.addEventListener('resize',fit);
 let selectedCase=null,selectedPartner=null,pendingView='loader';
 function applyView(){if(!frame.contentWindow.showExercise)return;frame.contentWindow.setServicePartner?.(selectedPartner||'saartje');const target=pendingView;if(target==='loader')frame.contentWindow.showLoader();else frame.contentWindow.showExercise(target);}
-function openPage(view='loader'){pendingView=view;previousFocus=document.activeElement;if(!frame.getAttribute('src'))frame.src='saartje-ai-laden.html?v=online-1';else applyView();document.getElementById('home').inert=true;document.getElementById('popupTitle').textContent=view==='loader'?'AI laden':window.SERVICE_CASES[view].title;if(!popup.open)popup.showModal();}
+function openPage(view='loader'){pendingView=view;previousFocus=document.activeElement;if(!frame.getAttribute('src'))frame.src='saartje-ai-laden.html?v=online-2';else applyView();document.getElementById('home').inert=true;document.getElementById('popupTitle').textContent=view==='loader'?'AI laden':window.SERVICE_CASES[view].title;if(!popup.open)popup.showModal();}
 function closePage(){popup.close();}
 for(const button of document.querySelectorAll('[data-open]'))button.addEventListener('click',()=>openPage('loader'));
 document.getElementById('closePopup').addEventListener('click',closePage);
