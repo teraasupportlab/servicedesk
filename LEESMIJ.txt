@@ -1,7 +1,8 @@
 ICT servicedesk met AAdrie en sAArtje
 
 Open index.html op je HTTPS-leswebsite. Kies eerst AAdrie of sAArtje.
-Laad daarna de AI en kies een telefonische melding.
+Kies daarna een telefonische melding. De AI werkt online via een Cloudflare Worker.
+De knop 'Reserve-AI' laadt een AI in de browser, alleen nodig als de online AI niet bereikbaar is.
 Beide personages oefenen dezelfde 15 scenario’s met eigen afbeeldingen.
 De index blijft 1000 x 500 pixels; de popups vullen bijna het hele venster.
 Met de knop bovenaan kun je van personage wisselen. De AI blijft geladen.
