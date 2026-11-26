@@ -43,3 +43,14 @@
 .call-actions .mic[aria-pressed="true"] .stop-icon{display:block}
 .call-actions #exSend{background:#9447f0;color:#fff}
 .call-actions .icon-action:focus-visible{outline:3px solid #f2c46d;outline-offset:3px}
+
+/* Houd alle gespreksiconen op één vaste onderste balk. */
+.call-actions{min-height:48px;flex-wrap:nowrap;margin-top:auto;padding:4px 8px;border:1px solid #aa7dca55;border-radius:12px;background:#1c1429;gap:8px}
+.call-actions .big-pickup{background:transparent;color:#39c96b}
+.call-actions .big-pickup:hover:not(:disabled){background:#39c96b18}
+.call-actions .big-pickup.is-hangup{color:#ff7373}
+.call-actions .big-pickup.is-hangup:hover:not(:disabled){background:#e5424218}
+.call-actions .pickup-gif{display:block;width:34px;height:34px;object-fit:contain}
+.call-actions .composer-hint{flex:1;min-width:0;text-align:right}
+.call-actions #exHint{max-width:190px}
+.call-actions button:disabled{opacity:.42}
