@@ -27,3 +27,25 @@
 #checkSheet .self-check{gap:7px;margin:8px 0}
 #checkSheet .self-check label{font-size:12px}
 .sheet-sub span{text-transform:none;letter-spacing:0;color:#bfa8d1;font-weight:400;margin-left:6px}
+
+/* Icon-only call controls with screen-reader labels and clear color cues. */
+.call-actions .icon-action{display:inline-grid;place-items:center;width:42px;height:40px;min-width:42px;padding:0;border-radius:10px;flex:0 0 auto}
+.call-actions .icon-action .icon-svg{display:block;width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.call-actions .big-pickup{width:62px;height:56px;min-width:62px;border:0;border-radius:14px;background:#249b55;color:#fff}
+.call-actions .big-pickup:hover:not(:disabled){background:#32b967}
+.call-actions .big-pickup:not(:disabled) .pickup-icon{animation:phone-rattle 1.25s ease-in-out infinite;transform-origin:50% 50%}
+.pickup-icon .ring-wave{animation:ring-wave 1.25s ease-out infinite;opacity:.5}
+.pickup-icon .wave-right{animation-delay:.15s}
+.call-actions .big-pickup .repeat-icon{display:none}
+.call-actions .big-pickup.is-repeat{background:#7549a0}
+.call-actions .big-pickup.is-repeat .pickup-icon{display:none}
+.call-actions .big-pickup.is-repeat .repeat-icon{display:block}
+.call-actions .mic .stop-icon{display:none}
+.call-actions .mic[aria-pressed="true"] .mic-icon{display:none}
+.call-actions .mic[aria-pressed="true"] .stop-icon{display:block}
+.call-actions #exSend{background:#9447f0;color:#fff}
+.call-actions #exHang{background:#81384f;color:#fff}
+.call-actions .icon-action:focus-visible{outline:3px solid #f2c46d;outline-offset:3px}
+@keyframes phone-rattle{0%,82%,100%{transform:rotate(0)}86%{transform:rotate(-13deg)}90%{transform:rotate(12deg)}94%{transform:rotate(-9deg)}98%{transform:rotate(6deg)}}
+@keyframes ring-wave{0%,100%{opacity:.3}40%{opacity:1}}
+@media(prefers-reduced-motion:reduce){.call-actions .big-pickup:not(:disabled) .pickup-icon,.pickup-icon .ring-wave{animation:none}}
