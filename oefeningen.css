@@ -5,3 +5,13 @@
 .voice-choice{max-width:165px;min-width:95px;border:1px solid #bd8cde50;border-radius:7px;background:#352442;color:#ecdaf8;padding:6px;font-size:10px}.call-tools label{margin-left:auto}.brand-text [data-partner-name]{display:inline}
 
 .aa.aadrie-aa{color:#ffb25d}
+/* Onderbalk: opnemen, typen en inspreken */
+.pickup-row{height:94px;display:flex;align-items:center;gap:16px;padding:0 18px;border:1px dashed #aa7dca66;border-radius:12px;background:#1c1429}
+.pickup-row[hidden],.talk[hidden],.call-actions button[hidden]{display:none}
+.pickup-row span{font-size:11px;color:#cfb9df;line-height:1.5}
+.big-pickup{font-size:14px;padding:12px 22px;min-width:190px}
+.composer-hint{flex:1;min-width:0;font-size:10px;line-height:1.3;color:#bfa8d1;text-align:center}
+.mic.recording{background:#b3264a;border-color:#ff9ab3;color:#fff;animation:mic-pulse 1.2s ease-in-out infinite}
+.composer textarea[readonly]{border-color:#ff9ab3}
+@keyframes mic-pulse{50%{box-shadow:0 0 0 5px #ff5c8a40}}
+@media (prefers-reduced-motion:reduce){.mic.recording{animation:none}}
